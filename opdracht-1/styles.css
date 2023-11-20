@@ -1,8 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+/*KLEUREN*/
+:root {
+    --lichtgrijs: #F7F7F7;
+    --donkergrijs: #d3d3d3;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', 'Verdana', sans-serif;
+}
 .recipe-card {
+    position: relative;
     /* "auto" aan de zijkanten zorgt ervoor dat het element in het midden komt te staan*/
     margin: 80px auto;
     /* Dit element heeft een vaste breedte van 350 pixels */
     width: 350px;
+    border: 1px solid var(--donkergrijs);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 12px;
+    /*overflow: hidden;*/
 }
-
-/* - Vul dit document aan met jouw eigen css! - */
+.recipe-image {
+    width:100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.favo {
+    width: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.recipe-details {
+    background-color: var(--lichtgrijs);
+    padding-block: 5px;
+    margin-top: -7px;
+}
+.recipe-details img {
+    width: 15px;
+}
+.recipe-detail-item {
+    margin-inline: 8px;
+    font-size: 14px;
+}
+.detail-icon {
+    height: 12px;
+    margin-inline: 5px;
+}
+.recipe-title {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px;
+}
